@@ -92,7 +92,7 @@ export default {
   },
   async mounted() {
     axios
-      .get("http://localhost:3001/location")
+      .get("http://vps-e7f2f466.vps.ovh.net:3001/location")
       .then((response) => {
         console.log(response.data);
         this.locations = response.data
@@ -103,7 +103,7 @@ export default {
       const mode = this.form.telework == 1 ? 'teletravail' : 'presentiel'
       console.log(this.form);
       axios
-      .put(`http://localhost:3001/location/${mode}`, this.form)
+      .put(`http://vps-e7f2f466.vps.ovh.net:3001/location/${mode}`, this.form)
       .then((response) => {
         console.log(response.data);
         // this.locations = response.data
@@ -115,7 +115,7 @@ export default {
 
     try {
       // console.log(this.form);
-      const response = await axios.post("http://localhost:3001/location/loc", this.form);
+      const response = await axios.post("http://vps-e7f2f466.vps.ovh.net:3001/location/loc", this.form);
       const { presentiel, teletravail } = response.data
       this.text = "My journey with Vue";
       this.presentiel = presentiel;
