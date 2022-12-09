@@ -17,7 +17,7 @@
                 class="text-gray-500 transition hover:text-gray-500/75"
                 href="/about"
               >
-                Statistiques
+                Tester notre solution !
               </a>
             </li>
           </ul>

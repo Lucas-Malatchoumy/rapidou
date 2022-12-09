@@ -41,7 +41,7 @@ je travaille en </h1>
     </label>
   </div>
 </fieldset>
-<label for="default" class="block mt-11 mb-2 text-sm font-medium text-dark">Default select</label>
+<label for="default" class="block mt-11 mb-2 text-sm font-medium text-dark">Secteur</label>
 <select id="default" class=" mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" v-model="form.location" >
   <option v-for="location in locations" :value="location._id" :key="location._id">{{location.district}}</option>
 </select>
